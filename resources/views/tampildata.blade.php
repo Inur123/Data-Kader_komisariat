@@ -116,7 +116,7 @@
                                             <img src="{{ asset('storage/' . $data->foto) }}" alt="Current Photo" style="max-width: 50px; margin-bottom: 10px;">
                                         </div>
                                     @endif
-                                    <input type="file" name="foto" class="form-control" required value="{{ $data->foto }}">
+                                    <input type="file" name="foto" class="form-control" value="{{ $data->foto }}">
                                 </div> 
                             </div>                           
                             <button type="submit" class="btn btn-success">Simpan</button>
