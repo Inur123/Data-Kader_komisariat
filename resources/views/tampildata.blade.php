@@ -94,7 +94,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="form-row">
+                            <div class="form-row">  
                                 <div class="form-group col-md-6">
                                     <label for="inputAddress">No Telpone</label>
                                     <input type="text" name="notelpone" class="form-control" id="inputAddress" value="{{ $data->notelpone }}" required>
@@ -111,6 +111,11 @@
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="exampleInputEmail1" class="form-label">Masukkan Foto</label>
+                                    @if ($data->foto)
+                                        <div>
+                                            <img src="{{ asset('storage/' . $data->foto) }}" alt="Current Photo" style="max-width: 50px; margin-bottom: 10px;">
+                                        </div>
+                                    @endif
                                     <input type="file" name="foto" class="form-control" required value="{{ $data->foto }}">
                                 </div> 
                             </div>                           

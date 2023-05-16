@@ -65,7 +65,7 @@
                 <td>{{ $row->fakultas }}</td>
                 <td>{{ $row->prodi }}</td>
                 <td>
-                  <img src="{{ asset('fotokader/'.$row->foto) }}" alt="" style="width: 50px; height: 50px;">
+                  <img src="{{ asset('storage/'.$row->foto) }}" alt="" style="width: 50px; height: 50px;">
                 </td>
                 <td>{{ $row->created_at->format('D M Y') }}</td>
             
